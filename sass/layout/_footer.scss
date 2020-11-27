@@ -1,0 +1,80 @@
+/* footer */
+
+.footer {
+	& .text {
+		display: block;
+		color: #ffffff;
+	}
+
+	&-address {
+		margin-right: 70px;
+	}
+
+	&-contacts-text {
+		color: #ffffff;
+		font-size: 14px;
+		line-height: 1.6;
+		margin-bottom: 9px;
+		margin-top: 20px;
+
+		&-item:not(:last-child) {
+			margin-top: 0;
+			margin-bottom: 9px;
+		}
+	}
+
+	&-link {
+		color: rgba(255, 255, 255, 0.6);
+		font-size: 14px;
+		line-height: 1.6;
+	}
+}
+
+/* signup-area */
+
+.sign-up {
+	margin-left: 93px;
+
+	&-area {
+		display: flex;
+	}
+}
+
+.signup-input {
+	width: 358px;
+	height: 50px;
+	background-color: $secondary-background-color;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 4px;
+	padding-left: 16px;
+	color: #ffffff;
+	outline: none;
+
+	&::placeholder {
+		color: rgba(255, 255, 255, 0.6);
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 1.25;
+	}
+}
+
+.join-us {
+	display: block;
+	align-items: center;
+	width: 206px;
+}
+
+.signup-text {
+	margin-bottom: 20px;
+}
+
+.join-us-text,
+.signup-text {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.2;
+	letter-spacing: 0.03em;
+	margin-bottom: 20px;
+}
