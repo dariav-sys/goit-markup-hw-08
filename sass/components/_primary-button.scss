@@ -1,6 +1,6 @@
 .button.primary {
 	display: inline-flex;
-	align-items: center;
+	text-align: center;
 	justify-content: center;
 
 	color: #ffffff;
@@ -24,6 +24,8 @@
 	}
 
 	&.footer {
+		position: relative;
+
 		display: inline-flex;
 		position: relative;
 		font-weight: 700;
@@ -37,13 +39,16 @@
 	}
 
 	&.footer::after {
+		position: absolute;
+		top: 50%;
+		right: 7%;
+		transform: translateY(-50%);
 		background-image: url("../images/footer-icons/icon-send.svg");
 		width: 24px;
 		height: 24px;
 		content: "";
 		background-repeat: no-repeat;
 		background-position: center;
-		margin-left: 10px;
 	}
 
 	&.button-form {

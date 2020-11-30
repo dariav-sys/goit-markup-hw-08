@@ -1,14 +1,6 @@
-/* portfolio buttons */
-
-.buttons {
-	display: flex;
-	flex-wrap: wrap;
-
-	justify-content: center;
-
+.list-buttons {
 	& .item {
 		margin-right: 8px;
-		margin-bottom: 50px;
 	}
 
 	& .item:last-child {
@@ -35,5 +27,24 @@
 
 	&:last-child {
 		margin-right: 0;
+	}
+}
+
+@media screen and (min-width: 480px) {
+	.portfolio-button {
+		margin-bottom: 15px;
+	}
+	.list-buttons {
+		display: flex;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		margin-bottom: 40px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.list-buttons {
+		align-items: center;
+		justify-content: center;
 	}
 }

@@ -1,20 +1,13 @@
-.feature {
-	padding-bottom: 0;
-
-	&-list {
-		display: flex;
-	}
-
+.features {
 	&-title {
 		font-weight: bold;
 		font-size: 14px;
 		line-height: 1.2;
-		margin-top: 0;
+		margin-top: 30px;
 		text-transform: uppercase;
 	}
 
 	&-text {
-		width: 270px;
 		font-style: normal;
 		font-weight: normal;
 		font-size: 14px;
@@ -24,17 +17,19 @@
 
 	&-item::before {
 		display: block;
-		width: 270px;
+		width: 100%;
 		height: 120px;
 		background-color: #f5f4fa;
 		content: "";
-		margin-bottom: 30px;
 		background-repeat: no-repeat;
 		background-position: center;
 	}
+	&-item {
+		margin-bottom: 30px;
+	}
 
 	&-item {
-		margin-right: 30px;
+		height: 251px;
 
 		&:nth-child(1)::before {
 			background-image: url("../images/footer-icons/antenna\ 1.svg");
@@ -54,4 +49,29 @@
 	}
 }
 
+@media screen and (min-width: 768px) {
+	.features-list {
+		display: flex;
+		flex-wrap: wrap;
+		// align-items: center;
+		justify-content: center;
+		margin: -15px;
+	}
+	.features-item {
+		width: calc((100% - 2 * 30px) / 2);
+		margin: 15px;
+	}
+	.section {
+		padding-bottom: 60px;
+	}
+}
 
+@media screen and (min-width: 1600px) {
+	.features-list {
+		margin: -15px;
+	}
+	.features-item {
+		// width: calc((100% - 4 * 30px) / 4);
+		width: 270px;
+	}
+}

@@ -1,26 +1,31 @@
-/* footer */
-
 .footer {
-	& .text {
-		display: block;
-		color: #ffffff;
-	}
-
 	&-address {
-		margin-right: 70px;
+		margin-bottom: 60px;
+		text-align: center;
 	}
 
-	&-contacts-text {
-		color: #ffffff;
-		font-size: 14px;
-		line-height: 1.6;
-		margin-bottom: 9px;
-		margin-top: 20px;
+	&-contacts {
+		margin-bottom: 60px;
+		margin: 0 auto;
 
-		&-item:not(:last-child) {
+		&-item {
+			text-align: center;
 			margin-top: 0;
 			margin-bottom: 9px;
 		}
+	}
+
+	&-contacts-text {
+		text-align: center;
+		color: #ffffff;
+		font-size: 14px;
+		line-height: 1.6;
+		// margin-bottom: 9px;
+		margin-top: 20px;
+	}
+
+	&-contacts-text:not(:last-child) {
+		margin-bottom: 9px;
 	}
 
 	&-link {
@@ -28,44 +33,6 @@
 		font-size: 14px;
 		line-height: 1.6;
 	}
-}
-
-/* signup-area */
-
-.sign-up {
-	margin-left: 93px;
-
-	&-area {
-		display: flex;
-	}
-}
-
-.signup-input {
-	width: 358px;
-	height: 50px;
-	background-color: $secondary-background-color;
-	border: 1px solid rgba(255, 255, 255, 0.3);
-	border-radius: 4px;
-	padding-left: 16px;
-	color: #ffffff;
-	outline: none;
-
-	&::placeholder {
-		color: rgba(255, 255, 255, 0.6);
-		font-weight: normal;
-		font-size: 16px;
-		line-height: 1.25;
-	}
-}
-
-.join-us {
-	display: block;
-	align-items: center;
-	width: 206px;
-}
-
-.signup-text {
-	margin-bottom: 20px;
 }
 
 .join-us-text,
@@ -77,4 +44,88 @@
 	line-height: 1.2;
 	letter-spacing: 0.03em;
 	margin-bottom: 20px;
+	margin-top: 30px;
+}
+
+.signup-text,
+.join-us-text,
+.join-us,
+.signup-area {
+	text-align: center;
+}
+
+.signup-input {
+	margin-bottom: 20px;
+	width: 358px;
+	height: 50px;
+	background-color: $secondary-background-color;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 4px;
+	padding-left: 16px;
+	color: #ffffff;
+	outline: none;
+
+	@media screen and (min-width: 480px) {
+		&::placeholder {
+			color: rgba(255, 255, 255, 0.6);
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 1.25;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.footer {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	.footer {
+		justify-content: space-between;
+	}
+
+	.join-us-text,
+	.footer-contacts-item {
+		text-align: left;
+	}
+
+	.footer-link {
+		display: inline-block;
+		text-align: justify;
+	}
+
+	.join-us-text {
+		text-align: justify;
+	}
+
+	.logo-footer {
+		text-align: justify;
+	}
+
+	.footer-address {
+		text-align: justify;
+	}
+
+	.sign-up {
+		display: inline-block;
+		text-align: justify;
+	}
+
+	.signup-text,
+	.join-us-text,
+	.join-us,
+	.signup-area {
+		text-align: center;
+	}
+	.signup-text,
+	.join-us-text,
+	.join-us,
+	.signup-area {
+		text-align: justify;
+	}
 }
