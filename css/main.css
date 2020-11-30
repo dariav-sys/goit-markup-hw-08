@@ -175,6 +175,12 @@ footer {
   .main-nav {
     display: none;
     position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+  .main-nav.is-open {
+    display: block;
   }
   .menu-button .icon-cross {
     display: none;
