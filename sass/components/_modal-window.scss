@@ -65,13 +65,13 @@
 /* form */
 
 .form {
+	max-height: 609px;
 	&-header-text {
 		font-weight: 700;
 		font-size: 20px;
 		line-height: 1.2;
 		text-align: center;
 		margin: 0;
-		// padding-bottom: 12px;
 	}
 
 	&-field {
@@ -186,10 +186,11 @@
 	-webkit-appearance: none;
 	display: inline-block;
 	font-weight: normal;
-	font-size: 14px;
-	line-height: 1.45;
+	font-size: 12px;
+	line-height: 1.16;
 	color: $secondary-grey-color;
-	margin-left: 8px;
+	margin-top: 20px;
+	margin-bottom: 19px;
 
 	&-conditions {
 		text-decoration: underline;
@@ -214,6 +215,7 @@
 			fill: white;
 			width: 16px;
 			height: 15px;
+			margin-right: 5px;
 			background-repeat: no-repeat;
 			background-position: center;
 			transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
