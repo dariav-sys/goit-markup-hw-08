@@ -191,16 +191,17 @@ img {
 
 .our-header {
   width: 100%;
+  align-items: center;
 }
 
 .main-nav {
   display: flex;
   align-items: center;
+  flex-grow: 1;
 }
 
 .site-nav {
   display: flex;
-  margin-left: 93px;
 }
 
 .site-nav-link {
@@ -334,21 +335,39 @@ img {
   }
 }
 
+.menu-button {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.menu-button:hover,
+.menu-button:focus {
+  fill: #2196f3;
+}
+
 @media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
   .auth-nav {
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: auto;
   }
-  .auth-nav-item {
-    margin-left: 53px;
+  .auth-nav-item:not(:last-child) {
+    margin-bottom: 10px;
   }
-  .site-nav-item {
-    margin-left: 53px;
-  }
-  .site-nav-item:nth-child(1) {
-    margin-left: 88px;
+  .site-nav-item:not(:last-child) {
+    margin-right: 53px;
   }
   .menu-button {
     display: none;
@@ -356,7 +375,6 @@ img {
   .our-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
 }
 
@@ -364,11 +382,14 @@ img {
   .main-nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 100%;
   }
   .auth-nav {
-    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+  .auth-nav-item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -447,6 +468,9 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .logofooter {
+    margin-right: 0;
+  }
   .footer {
     display: flex;
     align-items: baseline;
@@ -496,6 +520,10 @@ img {
   }
 }
 
+.portfolio {
+  padding-top: 60px;
+}
+
 .list-buttons .item {
   margin-right: 8px;
 }
@@ -525,10 +553,13 @@ img {
   margin-right: 0;
 }
 
-@media screen and (min-width: 480px) {
-  .portfolio-button {
+@media screen and (min-width: 320px) {
+  .item {
     margin-bottom: 15px;
   }
+}
+
+@media screen and (min-width: 480px) {
   .list-buttons {
     display: flex;
     align-items: flex-start;
@@ -541,6 +572,12 @@ img {
   .list-buttons {
     align-items: center;
     justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
   }
 }
 

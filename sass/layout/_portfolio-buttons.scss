@@ -1,3 +1,7 @@
+.portfolio {
+	padding-top: 60px;
+}
+
 .list-buttons {
 	& .item {
 		margin-right: 8px;
@@ -30,10 +34,13 @@
 	}
 }
 
-@media screen and (min-width: 480px) {
-	.portfolio-button {
+@media screen and (min-width: 320px) {
+	.item {
 		margin-bottom: 15px;
 	}
+}
+
+@media screen and (min-width: 480px) {
 	.list-buttons {
 		display: flex;
 		align-items: flex-start;
@@ -46,5 +53,11 @@
 	.list-buttons {
 		align-items: center;
 		justify-content: center;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.portfolio {
+		padding-top: 94px;
 	}
 }

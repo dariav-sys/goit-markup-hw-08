@@ -76,6 +76,9 @@
 }
 
 @media screen and (min-width: 768px) {
+	.logofooter {
+		margin-right: 0;
+	}
 	.footer {
 		display: flex;
 		align-items: baseline;
