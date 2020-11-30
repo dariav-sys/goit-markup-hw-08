@@ -48,3 +48,9 @@ img {
 		width: 270px;
 	}
 }
+
+@media screen and (min-width: 1200px) {
+	.team-employees {
+		flex-wrap: nowrap;
+	}
+}

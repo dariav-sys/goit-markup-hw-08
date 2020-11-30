@@ -86,10 +86,11 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .our-header {
-  max-width: 480px;
+  width: 100%;
 }
 
 .main-nav {
@@ -628,6 +629,12 @@ img {
 @media screen and (min-width: 1200px) {
   .team-employees-item {
     width: 270px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-employees {
+    flex-wrap: nowrap;
   }
 }
 

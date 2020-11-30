@@ -186,10 +186,11 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .our-header {
-  max-width: 480px;
+  width: 100%;
 }
 
 .main-nav {
