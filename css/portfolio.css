@@ -94,7 +94,7 @@ img {
 }
 
 .project-list-item {
-  width: 370px;
+  width: 100%;
   border: 1px solid #eeeeee;
 }
 
@@ -557,9 +557,6 @@ img {
   .item {
     margin-bottom: 15px;
   }
-}
-
-@media screen and (min-width: 480px) {
   .list-buttons {
     display: flex;
     align-items: flex-start;
