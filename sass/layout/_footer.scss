@@ -84,7 +84,7 @@
 	}
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
 	.footer {
 		justify-content: space-between;
 	}
@@ -111,9 +111,12 @@
 		text-align: justify;
 	}
 
-	.sign-up {
-		display: inline-block;
-		text-align: justify;
+	.signup-area {
+		display: flex;
+	}
+
+	.signup-input {
+		width: 358px;
 	}
 
 	.signup-text,

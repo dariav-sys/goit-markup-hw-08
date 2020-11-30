@@ -19,6 +19,12 @@
 	}
 }
 
+@media screen and (max-width: 479px) {
+	.logo-picture {
+		margin-bottom: 10px;
+	}
+}
+
 @media screen and (min-width: 480px) {
 	.partners-logos {
 		display: flex;
@@ -39,7 +45,7 @@
 	}
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
 	.logo-picture {
 		// width: calc((100% - 12 * 15px) / 6);
 		width: 170px;
