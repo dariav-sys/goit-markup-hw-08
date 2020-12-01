@@ -1,8 +1,8 @@
 .button.primary {
-	display: inline-flex;
+	display: flex;
 	text-align: center;
 	justify-content: center;
-
+	margin: 0 auto;
 	color: #ffffff;
 	background-color: $accent-color;
 
@@ -15,7 +15,7 @@
 	border-radius: 4px;
 	border: $accent-color;
 	margin-top: 30px;
-	padding: 10px 32px;
+	padding: 10px 12px;
 	cursor: pointer;
 
 	&:hover,
@@ -24,42 +24,38 @@
 	}
 
 	&.footer {
-		position: relative;
-
 		display: inline-flex;
-		position: relative;
+
 		font-weight: 700;
 		font-size: 16px;
 		line-height: 1.88;
-		margin-left: 12px;
 		margin-top: 0;
+		margin-left: 12px;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
 	}
 
 	&.footer::after {
-		position: absolute;
-		top: 50%;
-		right: 7%;
-		transform: translateY(-50%);
 		background-image: url("../images/footer-icons/icon-send.svg");
 		width: 24px;
 		height: 24px;
 		content: "";
 		background-repeat: no-repeat;
 		background-position: center;
-		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+		margin-left: 10px;
 	}
 
 	&.button-form {
 		display: block;
 		margin: 0 auto;
+		margin-top: 10px;
 		transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 		&:hover,
 		&:focus {
 			background-color: #188ce8;
+			outline: none;
 		}
 	}
 }
