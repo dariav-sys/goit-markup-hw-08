@@ -65,6 +65,7 @@
 /* form */
 
 .form {
+	max-height: 609px;
 	&-header-text {
 		font-weight: 700;
 		font-size: 20px;
@@ -189,6 +190,7 @@
 	line-height: 1.16;
 	color: $secondary-grey-color;
 	margin-top: 20px;
+	margin-bottom: 19px;
 
 	&-conditions {
 		text-decoration: underline;
@@ -202,16 +204,11 @@
 	}
 
 	&-label {
-		position: relative;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 
 		&::before {
-			position: absolute;
-			top: 50%;
-			left: -20px;
-			transform: translateY(-25%);
 			content: "";
 			border: 2px solid black;
 			border-radius: 2px;
